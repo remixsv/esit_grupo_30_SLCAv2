@@ -1,135 +1,265 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: #193059;
-    background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  color: #193059;
+  background-color: #ffffff;
+  line-height: 1.6;
 }
 
 /* Encabezado */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #193059;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #193059;
+  color: white;
+  position: relative;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
 }
 
 header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+  color: #1FC224;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 /* Hero */
 .hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 30px;
-    background-color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #eaf4ff, #ffffff);
+  gap: 20px;
 }
 
 .hero-text {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 280px;
 }
 
 .hero-text h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .botones a {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.botones a:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 .btn-azul {
-    background-color: #124DD9;
+  background-color: #124DD9;
+  box-shadow: #0C4B87;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 7px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
 }
 
 .btn-verde {
-    background-color: #1FC224;
+  background-color: #1FC224;
 }
 
 .hero-img {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 280px;
 }
 
 .hero-img img {
-    max-width: 100%;
-    border-radius: 10px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 /* Secciones */
 section {
-    padding: 40px 20px;
-    text-align: center;
+  padding: 40px 20px;
+  text-align: center;
 }
 
+section h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  margin-bottom: 20px;
+}
+
+/* Servicios */
 .services .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.service {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .service img {
-    width: 80%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 /* Cita */
 .cita {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+}
+.cita-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+.cita-calendario, .cita-formulario {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+/* Formulario */
+.cita-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.cita-formulario label {
+  font-weight: 600;
+  text-align: left;
+}
+.cita-formulario input, .cita-formulario select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1 rem;
+  width: 100%;
+}
+.cita-formulario button{
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
+.cita-formulario .btn-verde {
+  background: #1FC224;
+  color: #fff;
+}
+
+.cita-formulario .btn-verde:hover {
+  background: #17a61c;
+}
 /* Beneficios */
 .benefit-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .benefit span {
-    font-size: 2rem;
-    display: block;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
-    background-color: #0C4B87;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #0C4B87;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
 }
 
-/* Responsive */
+/* Responsividad */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+    flex-direction: column;
+    background: #193059;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  header nav.active {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .botones a {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .cita-container {
+    grid-template-columns: 1fr;
+  }
 }
