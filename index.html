@@ -167,9 +167,19 @@
     </footer>
 <!-- ********************************************************** -->
 <!-- scripts -->	
-<script src="script.js"></script>
+<script>
+  document.getElementById('toggleButton').addEventListener('click', function() {
+    var iframe = document.getElementById('appointmentIframe');
+    if (iframe.style.display === 'none') {
+      iframe.style.display = 'block';
+    } else {
+      iframe.style.display = 'none';
+    }
+  });
+</script>
 
 </body>
 
 </html>
+
 
