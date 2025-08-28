@@ -18,7 +18,7 @@
 .navbar-logo a {
   display: flex;
   align-items: center;
-  color: #4a148c;
+  color: #193059;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.25rem;
@@ -47,10 +47,12 @@
 /* Parallax header */
   .parallax-header {
   position: relative;
+  top: 0px;
+  left: 0px;
   height: 600px;
-  background-image: url('https://st.depositphotos.com/2234518/3930/i/450/depositphotos_39307617-stock-photo-man-giving-thumbs-up-at.jpg');
+  background-image: url('https://r.mobirisesite.com/1689480/assets/images/g58f94bfeec7eaa1fee8148245f02-h_mdzckwjj.jpg');
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -82,11 +84,10 @@
   /* Content below the parallax header */
   .content {
     padding: 10px;
-
     min-height: 600px;
   }
   
-.botones a {
+.botones a, button {
     display: inline-block;
     margin: 5px;
     padding: 10px 20px;
@@ -97,11 +98,15 @@
 }
 
 .btn-azul {
-    background-color: #124DD9;
+    background-color: #34B7F1;
 }
 
 .btn-verde {
-    background-color: #1FC224;
+    background-color: #25D366;
+}
+
+.btn-extra {
+    background-color: #4d5e85;
 }
 
 
@@ -152,15 +157,5 @@ section {
    .service-grid {    
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-   
-	.side-by-side-container {
-    flex-direction: column;
-    margin: 20px auto;
-    padding: 0 10px;
-  }
 
-  .info-section2 {
-    max-height: none;
-    padding: 20px 20px;
-  }
 }
