@@ -113,14 +113,52 @@
     </section>	
 <!-- ********************************************************** -->
 <!-- Reserva tu cita -->
-    <section id="cita" class="info-section">
-        <h2>¡Reserva tu cita hoy!</h2>
-        <p>"Puedes agendar una cita para realizar un diagnóstico completo y personalizado. Porque tu salud bucal merece lo mejor."</p>
-        
-		<button id="toggleButton" class="btn-extra"> Agendar Cita </button>
-		<iframe id="appointmentIframe" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1I166241LAK590FBTZk7KWn96sZ5EA9970Qv072PbgukAS9XphkTtIt8AqrYwdiA42KiYzuSWT?gv=true" style="border: 0; width: 100%; height: 800px; display: none;" frameborder="0"></iframe>
+    <section id="cita" class="cita">
+  <h2>¡Reserva tu cita hoy!</h2>
+  <p>"Puedes agendar una cita para realizar un diagnóstico completo y personalizado. Porque tu salud bucal merece lo mejor."</p>
+  
+  <div class="cita-container">
+    
+    <!-- Calendario (Google Calendar o enlace) -->
+    <div class="cita-calendario">
+      <iframe src="https://calendar.google.com/calendar/embed?src=es.sv%23holiday%40group.v.calendar.google.com&ctz=America%2FEl_Salvador" 
+        style="border:0" width="100%" height="400" frameborder="0" scrolling="no">
+      </iframe>
+      <p style="margin-top:10px">
+        También puedes <a class="a-cita" href="https://calendar.app.google/Dd3fcV1PwSy7VZsK9" target="_blank" class="btn-azul">Agendar desde Google Calendar</a>
+      </p>
+    </div>
 
-    </section>
+    <!-- Formulario -->
+    <div class="cita-formulario">
+      <form action="#" method="post">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@mail.com" required>
+
+        <label for="celular">Celular</label>
+        <input type="tel" id="celular" name="celular" placeholder="+503 7000-0000" required>
+
+        <label for="area">Área de odontología</label>
+        <select id="area" name="area" required>
+          <option value="">Seleccione un área</option>
+          <option value="limpieza">Limpieza Dental</option>
+          <option value="ortodoncia">Ortodoncia</option>
+          <option value="implantes">Implantes</option>
+          <option value="carillas">Carillas</option>
+          <option value="diseno">Diseño de Sonrisa</option>
+          <option value="protesis">Prótesis Dentales</option>
+          <option value="radiografia">Radiografía</option>
+          <option value="extracciones">Extracciones</option>
+        </select>
+
+        <button type="submit" class="btn-verde" href="https://calendar.app.google/Dd3fcV1PwSy7VZsK9">Reservar cita</button>
+      </form>
+    </div>
+  </div>
+</section>
 <!-- ********************************************************** -->
   <section id="contact" class="info-section">
   <h2>Comunicate Con Nosotros</h2>
