@@ -4,50 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <meta name="description" content="Transformando sonrisas con arte y cuidado dental avanzado. Con gusto puedes agendar una cita para realizar un diagnóstico completo y personalizado e indicarte como podemos ayudarte a cuidar tu sonrisa.">
-  
-  
+    
   <title>Clínica Dental Sonríe  | San Salvador | WhatsApp</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style2.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+	
+<!-- ********************************************************** -->
+<!-- Encabezado -->
+<nav class="navbar">
+  <div class="navbar-logo"><a href="#home" tabindex="0"><img src="favicon.png" style="height:2rem;">Clínica Dental Sonríe</a></div>
+  <div class="navbar-nav">
+    <a href="#servicios" tabindex="0">Servicios</a>
+    <a href="#contact" tabindex="0">Contacto</a>
+  </div>
+</nav>	
+	
+<!-- ********************************************************** -->
 
-    <!-- Encabezado -->
-    <header>
-        <div class="logo">
-            <h2>Clinica Dental Sonrie</h2>
-        </div>
-        <nav>
-            <a href="#servicios">Servicios</a>
-            <a href="#beneficios">Beneficios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
-
-    <!-- Sección principal -->
-    <section id="inicio" class="hero">
-        <div class="hero-text">
-            <h1>Sonríe con confianza,<br> vive con salud.</h1>
+<div class="parallax-header">
+<!-- Sección principal -->
+    <section id="inicio">
+        <div>
+            <h1>Clínica Dental Sonríe</h1><br>Transformando sonrisas con arte y cuidado dental avanzado
             <div class="botones">
-                <a href="#cita" class="btn-azul">Agendar cita</a>
-                <a href="https://wa.me/50347275436?text=Hola%20necesito%20agendar%20una%20cita." target="_blank" class="btn-verde">WhatsApp</a>
+                <a href="#cita" class="btn-azul">📅 Agendar Cita</a>                
             </div>
         </div>
-        <div class="hero-img">
-            <img src="https://st.depositphotos.com/2234518/3930/i/450/depositphotos_39307617-stock-photo-man-giving-thumbs-up-at.jpg" alt="Dentistas">
-        </div>
+        
     </section>
+</div>
 
-    <section class="about">
-        <h2>¿Quiénes somos?</h2>
-        <p>Somos un equipo de odontólogos profesionales especializados en alta estética dental. Nuestro objetivo es ofrecerte el mejor tratamiento con nuestra experiencia, calidad y profesionalismo.</p>
-    </section>
-
-    <!-- Servicios -->
-    <section id="servicios" class="services">
+<!-- ********************************************************** -->
+<!-- About Us -->
+  <section id="about" class="info-section">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      Somos un equipo de odontólogos profesionales especializados en alta estética dental. Nuestro objetivo es ofrecerte el mejor tratamiento con nuestra experiencia, calidad y profesionalismo.
+    </p>
+  </section>
+<!-- ********************************************************** -->
+<!-- Servicios -->
+    <section id="servicios" class="info-section">
         <h2>Nuestros servicios</h2>
         <div class="service-grid">
             <div class="service">
@@ -85,19 +88,9 @@
             </div>
         </div>
     </section>
-
-    <!-- Reserva tu cita -->
-    <section id="cita" class="cita">
-        <h2>¡Reserva tu cita hoy!</h2>
-        <p>"Puedes agendar una cita para realizar un diagnóstico completo y personalizado. Porque tu salud bucal merece lo mejor."</p>
-        <div class="botones">
-            <a href="https://calendar.app.google/Dd3fcV1PwSy7VZsK9" class="btn-azul">Agendar cita</a>
-            <a href="https://wa.me/50347275436?text=Hola%20necesito%20informacion%20" target="_blank" class="btn-verde">WhatsApp</a>
-        </div>
-    </section>
-
-    <!-- Beneficios -->
-    <section id="beneficios" class="benefits">
+<!-- ********************************************************** -->
+<!-- Beneficios -->
+    <section id="beneficios" class="info-section">
         <h2>Nuestros beneficios</h2>
         <div class="benefit-grid">
             <div class="benefit">
@@ -117,11 +110,55 @@
                 <p>Tecnología de última generación</p>
             </div>
         </div>
+    </section>	
+<!-- ********************************************************** -->
+<!-- Reserva tu cita -->
+    <section id="cita" class="info-section">
+        <h2>¡Reserva tu cita hoy!</h2>
+        <p>"Puedes agendar una cita para realizar un diagnóstico completo y personalizado. Porque tu salud bucal merece lo mejor."</p>
+        <div class="botones">
+            <a href="https://calendar.app.google/Dd3fcV1PwSy7VZsK9" class="btn-azul">Agendar Cita</a>
+            <a href="https://wa.me/50347275436?text=Hola%20necesito%20informacion%20" target="_blank" class="btn-verde">WhatsApp</a>
+        </div>
     </section>
+<!-- ********************************************************** -->
+<section id="contact-faq-container" class="side-by-side-container">
+  <!-- Contact Form Section -->
+  <section id="contact" class="info-section2">
+    <h2>Envianos Un Mensaje</h2>
+    <form class="contact-form" action="#" method="POST">
+      <label for="name">Nombre</label>
+      <input id="name" name="name" type="text" required />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-    <!-- Footer -->
+  <!-- FAQ Section -->
+  <section id="faq" class="info-section2">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>What are your operating hours?</summary>
+      <p>We are open Monday to Friday from 9am to 6pm and Saturdays 9am to 2pm.</p>
+    </details>
+    <details>
+      <summary>Do you accept insurance?</summary>
+      <p>Yes, we accept most major dental insurance plans.</p>
+    </details>
+    <details>
+      <summary>How can I schedule an appointment?</summary>
+      <p>You can schedule an appointment by clicking the Schedule Appointment button or contacting us via WhatsApp.</p>
+    </details>
+  </section>
+</section>
+
+<!-- ********************************************************** -->
+<!-- Footer -->
     <footer id="contacto">
-        <p>📞 Contáctenos: <a href="tel:+50374275436" style="color:#ffffff;text-decoration:none">+503-7427-5436</a></p>
+        <p>📞 Contáctenos: <a href="tel:+50374275436">+503-7427-5436</a></p>
         <p>🕒 Lunes a Viernes 8:00 am - 4:00 pm | Sábado 8:00 am - 12:00 pm</p>
         <p>&copy; 2025 | Powered by Grupo30ESIT</p>
     </footer>
