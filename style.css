@@ -9,7 +9,7 @@ scroll-behavior: smooth;
 position:relative;
 }
 
-a {
+a, button{
 text-decoration: none;
 color: inherit;
 }
@@ -34,7 +34,7 @@ border-radius: 20px;
 box-shadow: 0 4px 12px rgb(0 0 0 / 0.06);
 }
 
-.info-section, .info-section2  h2 {
+.info-section  h2 {
 text-align: center;
 margin-bottom: 26px;
 font-weight: 700;
@@ -42,29 +42,10 @@ font-size: 1.5em;
 color: #193059;
 }
 
-.info-section,.info-section2 p {
+.info-section p {
 font-size: 1em;
 line-height: 1.2;
 color: #193059;
-}
-/* Sections CONTACTFAQ */
-.side-by-side-container {
-  display: flex;
-  gap: 20px;
-  max-width: 96%;
-  margin: 40px auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.info-section2 {
-  flex: 1;
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgb(0 0 0 / 0.06);
-  overflow-y: auto;
-  max-height: 700px; /* optional: to keep a consistent vertical size */
-  box-sizing: border-box;
 }
 
 details {
@@ -77,76 +58,10 @@ box-shadow: inset 0 0 4px #d1c4e9;
 }
 
 details summary {
-font-weight: 600;
-font-size: 1.2em;
 outline: none;
 color: #4a148c; /* Purple 900 */
 }
 
-/* Contact Form /
-.contact-section {
-background-color: #e1bee7; / Material purple 100 */
-padding: 32px 24px;
-max-width: 700px;
-margin: 50px auto 60px;
-border-radius: 24px;
-box-shadow: 0 6px 20px rgb(0 0 0 / 0.10);
-}
-
-.contact-section h2 {
-text-align: center;
-margin-bottom: 28px;
-font-weight: 700;
-font-size: 2.2em;
-color: #4a148c;
-}
-
-.contact-form {
-display: flex;
-flex-direction: column;
-}
-
-.contact-form label {
-font-weight: 700;
-margin-bottom: 8px;
-margin-top: 16px;
-color: #4a148c;
-font-size: 1.1em;
-}
-
-.contact-form input,
-.contact-form textarea {
-padding: 14px;
-border: 2px solid #b39ddb; /* Purple 200 */
-border-radius: 18px;
-font-size: 1.1em;
-resize: vertical;
-transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-border-color: #7b1fa2; /* Dark purple */
-outline: none;
-}
-
-.contact-form button {
-margin-top: 32px;
-background-color: #6a1b9a; /* Purple 500 */
-border: none;
-color: white;
-padding: 16px;
-font-size: 1.4em;
-font-weight: 700;
-border-radius: 36px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-box-shadow: 0 3px 14px rgba(156, 39, 176, 0.5);
-}
-
-.contact-form button:hover {
-background-color: #6a1b9a; /* Darker purple */
-}
 
 footer {
 background-color: #193059;
